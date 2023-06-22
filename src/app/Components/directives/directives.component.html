@@ -1,0 +1,153 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h1 id="main-heading">Directives</h1>
+      <p class="topic-defination">
+        Directives are classes that add additional behavior to elements in an
+        Angular Application.
+      </p>
+      <h3 id="sub-heading mt-3">Types of Diretives</h3>
+      <div class="types mt-3">
+        <img
+          src="../../../assets/Directives.jpeg"
+          alt=""
+          srcset=""
+          width="500"
+          height="200"
+        />
+      </div>
+      <div class="types mt-3">
+        <h4>What are Structural Directives?</h4>
+        <p>
+          Structural directives changes appearance of DOM by adding or removing
+          elements.
+        </p>
+      </div>
+      <div class="types mt-3">
+        <h4>What are Attribute Directives?</h4>
+        <p>
+          Attribute directives changes appearance or behaviour of an element.
+          elements.
+        </p>
+      </div>
+
+      <div class="row mt-5">
+        <h1 id="main-heading">
+          Differences between Component, Structural and Attribute Directives ?
+        </h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Component Directive</th>
+              <th scope="col">Structural Directive</th>
+              <th scope="col">Attribute Directive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                Component directive is responsible for showing the first whole
+                view.It is the most used one.
+              </td>
+              <td>
+                Structural directive is responsible for adding and deleteing
+                html elemts in the view.
+              </td>
+              <td>
+                Attribute directive is responsible for changing the appearance
+                of view by adding or removing style/css classes of the html
+                elements.
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>
+                Starts with @sign. <br />
+                Like: @Component
+              </td>
+              <td>
+                Starts with *sign. <br />
+                Like: *ngFor, *ngIf, *ngSwitch
+              </td>
+              <td>
+                Set inside Squre Brackets "[]". <br />
+                Like: [ngStyle], [ngClass]
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="offset-sm-1 col-md-5">
+      <div class="row">
+        <h2 class="topic-heading">1. What is *ngIf Directive ?</h2>
+        <p class="topic-definatin mb-3">
+          ngIf directive is used to add or remove items based on the if
+          condition.
+        </p>
+        <button class="btn btn-success" (click)="showName()">Show name</button>
+        <h4
+          style="text-align: center; font-weight: bold"
+          class="mt-2 text-danger"
+          *ngIf="nameVisible"
+        >
+          Srijan Kumar Khan
+        </h4>
+      </div>
+
+      <div class="row mt-5">
+        <h2 class="topic-heading">2. What is *ngFor Directive ?</h2>
+        <p class="topic-definatin mb-3">
+          ngFor directive is used to iterate a list of items and then display
+          them.
+        </p>
+        <ul *ngFor="let stu of students">
+          <li>{{ stu }}</li>
+        </ul>
+      </div>
+
+      <div class="row mt-5">
+        <h2 class="topic-heading">3. What is *ngSwitch Directive ?</h2>
+        <p class="topic-definatin mb-3">
+          ngSwitch directive is an Structural directive used in combination with
+          *ngSwtichCase and *ngSwitchDefault that are both structural directive.
+        </p>
+        <ul [ngSwitch]="students.length">
+          <li *ngSwitchCase="0">Zero Student</li>
+          <li *ngSwitchCase="1">One Student</li>
+          <li *ngSwitchCase="2">Two Students</li>
+          <li *ngSwitchCase="3">Three Students</li>
+          <li *ngSwitchDefault="">More Studetns</li>
+        </ul>
+      </div>
+
+      <div class="row mt-5">
+        <h2 class="topic-heading">4. What is *ngStyle Directive ?</h2>
+        <p class="topic-definatin mb-3">
+          ngStyle is an attribute directive that updates styles for the HTML
+          element.
+        </p>
+        <h5
+          class="text-light mb-5"
+          [ngStyle]="{
+            'background-color': colorName[0],
+            'text-align': colorName[1]
+          }"
+        >
+          Added ngStyle attribute
+        </h5>
+      </div>
+
+      <div class="row mt-5">
+        <h2 class="topic-heading">5. What is *ngClass Directive ?</h2>
+        <p class="topic-definatin mb-5">
+          ngClass directive adds and removes CSS classes on an HTML element.
+        </p>
+        <h5 class="mb-5" [ngClass]="className">Added ngClass attribute</h5>
+      </div>
+    </div>
+  </div>
+</div>

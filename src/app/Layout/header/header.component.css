@@ -1,0 +1,14 @@
+.nav-link {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .active {
+    border-bottom: 3px solid black;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  

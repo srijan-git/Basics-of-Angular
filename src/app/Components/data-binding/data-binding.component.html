@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h1 id="main-heading">Data Binding</h1>
+      <p class="topic-defination">
+        Data binding is the way to communicate between your Typescript code of
+        your component and your HTML view.
+      </p>
+      <h3 id="sub-heading mt-3">Types of Data Binding</h3>
+      <div class="types mt-3">
+        <p>1.Interpolation</p>
+        <p>2.Property Binding</p>
+        <p>3.Event Bindng</p>
+        <p>4.Two way Binding</p>
+      </div>
+    </div>
+    <div class="offset-sm-1 col-md-6">
+      <div class="row">
+        <h1 class="topic-heading">1. What is {{ bindingTechnique }} ?</h1>
+        <p class="topic-definatin mb-5">
+          When ever we want to trasfer data from Typescript file to the HTML
+          file we can use Interpolation.It is a One way data-binding technique
+        </p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">2. What is Property Binding ?</h1>
+        <p class="topic-definatin">
+          The use of Property Binding is similar like interppolation but it
+          bindes the property of HTML attributes.
+        </p>
+        <img
+          [src]="imageBinding"
+          [height]="height"
+          [width]="width"
+          class="mb-5"
+        />
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">2. What is Event Binding ?</h1>
+        <p class="topic-definatin">
+          Event binding is used to handle the events raised by the user action
+          like button click.
+        </p>
+        <button (click)="generateAlert()" class="btn btn-primary mb-5">
+          Click me
+        </button>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">2. What is Two way binding ?</h1>
+        <p class="topic-definatin">
+          Two-way data binding in Angular will help users to exchange data from
+          the view to component and then from component to view.
+        </p>
+        <input type="text" class="mb-2 form-control" [(ngModel)]="name" />
+        <p class="mb-5">Data will be shown here: {{ name }}</p>
+      </div>
+    </div>
+  </div>
+</div>
