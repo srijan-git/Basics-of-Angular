@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h1 id="main-heading">
+        What is the role of Asynchronous Operations in Observable?
+      </h1>
+      <p class="topic-defination">
+        Observables are used to perform Asynchronous operations and handle
+        Asynchronous data.
+      </p>
+      <h3 id="sub-heading mt-3">
+        What is the difference between Promise and Observable?
+      </h3>
+      <div class="types mt-3 mb-5">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Observables</th>
+              <th scope="col">Promise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                Emit multiple values over a period of time.Also called streaming
+                of data.
+              </td>
+              <td>Emit a single value at a time.</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>
+                Are lazy:they are not executed until we subscribe to them using
+                the subscribe() method.
+              </td>
+              <td>Are not lazy: excutes immediately after creation.</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>
+                Have subscriptions that are cancellable using the unsubscribe()
+                method.
+              </td>
+              <td>Are not cancellable.Sometimes it leads to memory leak.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="offset-sm-1 col-md-6">
+      <div class="row">
+        <h1 class="topic-heading">What is RxJS?</h1>
+        <p class="topic-definatin mb-5">
+          RxJs is a Javascript library,that allow us to work with asynchronous
+          data stream with the help of Observables.
+          <br />
+          Observables introduced by RxJs library.
+          <br />
+          RxJs stands for Reactive Extensions for JavaScript.
+        </p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">
+          What is Observable?How to implement Observable?
+        </h1>
+        <p class="topic-definatin mb-5">
+          Observables are used to stream data to multiple components.
+        </p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">What is HTTPClient in Angular?</h1>
+        <p class="topic-definatin mb-5">
+          HTTPClient is a built-in service class in Angular. <br />
+          We can import HTTPClient from @angular/common/http package.
+          <br />
+          It is used to perform HTTP requests.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

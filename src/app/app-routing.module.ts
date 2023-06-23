@@ -4,6 +4,8 @@ import { DirectivesComponent } from './Components/directives/directives.componen
 import { HomeComponent } from './Components/home/home.component';
 import { DataBindingComponent } from './Components/data-binding/data-binding.component';
 import { DecoratorsAndPipesComponent } from './Components/decorators-and-pipes/decorators-and-pipes.component';
+import { ServicesAnddependencyComponent } from './Components/services-anddependency/services-anddependency.component';
+import { ObservableHTTPCLientRxJSComponent } from './Components/observable-httpclient-rx-js/observable-httpclient-rx-js.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,10 @@ const routes: Routes = [
   {
     path: 'decoratorsandpipes',
     component: DecoratorsAndPipesComponent,
+  },
+  {
+    path: 'observable',
+    component: ObservableHTTPCLientRxJSComponent,
   },
   {
     path: '**',

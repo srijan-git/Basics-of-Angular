@@ -9,6 +9,8 @@ import { DirectivesComponent } from './Components/directives/directives.componen
 import { HomeComponent } from './Components/home/home.component';
 import { DecoratorsAndPipesComponent } from './Components/decorators-and-pipes/decorators-and-pipes.component';
 import { HeaderComponent } from './Layout/header/header.component';
+import { ServicesAnddependencyComponent } from './Components/services-anddependency/services-anddependency.component';
+import { ObservableHTTPCLientRxJSComponent } from './Components/observable-httpclient-rx-js/observable-httpclient-rx-js.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HeaderComponent } from './Layout/header/header.component';
     DirectivesComponent,
     HomeComponent,
     DecoratorsAndPipesComponent,
+    ServicesAnddependencyComponent,
+    ObservableHTTPCLientRxJSComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

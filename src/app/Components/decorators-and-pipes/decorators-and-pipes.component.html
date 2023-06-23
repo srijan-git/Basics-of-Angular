@@ -1,1 +1,67 @@
-<p>decorators-and-pipes works!</p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h1 id="main-heading">Decorators</h1>
+      <p class="topic-defination">
+        Decorators stores metadata about a class,method or property. <br />
+        Metadata is "data that provides information about other data". <br />
+        All Decorators are represented by @.
+      </p>
+      <h3 id="sub-heading mt-3">Types of Decorators</h3>
+      <div class="types mt-3 mb-5">
+        <img
+          src="../../../assets/Decorators.jpeg"
+          alt=""
+          srcset=""
+          width="500"
+          height="300"
+        />
+      </div>
+
+      <h1 id="main-heading">Pipes</h1>
+      <p class="topic-defination">
+        Pipes are simple functions which accepts an input value and return a
+        transformed value.
+      </p>
+      <h3 id="sub-heading mt-3">Types of Pipes</h3>
+      <div class="types mt-3 mb-5">
+        <img
+          src="../../../assets/Pipes.jpeg"
+          alt=""
+          srcset=""
+          width="550"
+          height="250"
+        />
+      </div>
+    </div>
+    <div class="offset-sm-1 col-md-6">
+      <div class="row">
+        <h1 class="topic-heading">1. Uppercase Pipe</h1>
+        <p class="topic-definatin mb-5">{{ title | uppercase }}</p>
+      </div>
+      <div class="row">
+        <h1 class="topic-heading">2. Lowercase Pipe</h1>
+        <p class="topic-definatin mb-5">{{ title | lowercase }}</p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">3. Parameterized Pipe</h1>
+        <p class="topic-definatin mb-5">{{ 1234.23234 | currency : "INR" }}</p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">4. What is Chaining Pipes?</h1>
+        <p class="topic-definatin mb-5">{{ dob | date | uppercase }}</p>
+      </div>
+
+      <div class="row">
+        <h1 class="topic-heading">4. What is Pure Pipes?</h1>
+        <p class="topic-definatin mb-5"></p>
+      </div>
+      <div class="row">
+        <h1 class="topic-heading">4. What is Impure Pipes?</h1>
+        <p class="topic-definatin mb-5"></p>
+      </div>
+    </div>
+  </div>
+</div>
