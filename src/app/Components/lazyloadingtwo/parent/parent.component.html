@@ -1,0 +1,9 @@
+<h1 class="mt-5 mb-5 font-weight-bold">
+  Child &nbsp;-> &nbsp; Parent Communication:
+</h1>
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="text-center">
+    Parent component -> view child data ( {{ childData }} )
+  </h1>
+  <app-child (notify)="pMethod($event)"></app-child>
+</div>

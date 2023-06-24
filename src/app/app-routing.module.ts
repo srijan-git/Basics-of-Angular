@@ -34,6 +34,20 @@ const routes: Routes = [
     component: ObservableHTTPCLientRxJSComponent,
   },
   {
+    path: 'lazyloading',
+    loadChildren: () =>
+      import('./Components/lazy-loading/lazy-loading.module').then(
+        (lazyModule) => lazyModule.LazyLoadingModule
+      ),
+  },
+  {
+    path: 'lazyloading2',
+    loadChildren: () =>
+      import('./Components/lazyloadingtwo/lazyloadingtwo.module').then(
+        (lazyloading) => lazyloading.LazyloadingtwoModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

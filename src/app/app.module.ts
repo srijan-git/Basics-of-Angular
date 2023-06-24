@@ -11,6 +11,7 @@ import { DecoratorsAndPipesComponent } from './Components/decorators-and-pipes/d
 import { HeaderComponent } from './Layout/header/header.component';
 import { ServicesAnddependencyComponent } from './Components/services-anddependency/services-anddependency.component';
 import { ObservableHTTPCLientRxJSComponent } from './Components/observable-httpclient-rx-js/observable-httpclient-rx-js.component';
+import { LazyLoadingModule } from './Components/lazy-loading/lazy-loading.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ObservableHTTPCLientRxJSComponent } from './Components/observable-httpc
     ServicesAnddependencyComponent,
     ObservableHTTPCLientRxJSComponent,
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, LazyLoadingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
